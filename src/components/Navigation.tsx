@@ -22,7 +22,8 @@ export const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Winchester Water Craft" className="h-12" />
+            <img src={logo} alt="Winchester Water Crafts Logo" className="h-12 w-12" />
+            <h1 className="text-xl md:text-2xl font-bold text-foreground">Winchester Water Crafts</h1>
           </Link>
 
           {/* Desktop Navigation */}

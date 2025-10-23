@@ -4,6 +4,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import { Waves, Box, Lightbulb } from "lucide-react";
+import heroImage from "@/assets/water-droplets.jpg";
 
 const Products = () => {
   const products = [
@@ -50,10 +51,15 @@ const Products = () => {
       <Navigation />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary to-secondary text-primary-foreground py-16">
-        <div className="container mx-auto px-4 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Our Products</h1>
-          <p className="text-lg opacity-90 max-w-2xl mx-auto">
+      <section className="relative text-primary-foreground py-16 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${heroImage})` }}
+        />
+        <div className="absolute inset-0 bg-primary/70" />
+        <div className="container mx-auto px-4 text-center relative z-10">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Products</h2>
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             Discover our range of premium water features designed to enhance any space with beauty and tranquility
           </p>
         </div>
